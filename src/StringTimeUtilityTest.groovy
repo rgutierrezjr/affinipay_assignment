@@ -3,9 +3,9 @@ class StringTimeUtilityTest extends GroovyTestCase {
     void testAddMinutes() {
         def utility = new StringTimeUtility()
 
-        def newTime = utility.addMinutes("5:00 AM", 120)
+        def newTime = utility.addMinutes("5:00 AM", 150)
 
-        assertTrue(newTime == "7:00 AM")
+        assertTrue(newTime == "7:30 AM")
     }
 
     void testPeriodChange() {
